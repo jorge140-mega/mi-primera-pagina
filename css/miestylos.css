@@ -1,0 +1,172 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 jun 2021, 19:28:29
+    Author     : jossh
+*/
+:root{
+  --background: linear-gradient(135deg,#667eea7e 8%,#764ba298 100%);
+  --color-primary:#667eea;
+  --color-secundary:#764ba298;
+  --boton-padding:20px 48px;
+}
+body{
+    font-family:'calibri light';
+    
+}
+.contenedor{
+    width: 85%;
+    margin: 0 auto;
+    color: var(--color-primary);
+    overflow: hidden;
+    padding: 80px 0px;
+    max-width: 1200px;
+  
+}
+.header.contenedor{
+    padding: 0px;
+}
+.subtitulos{
+    color: #33ffcc;
+    font-size:2.5rem;
+    margin-bottom:35px;
+    
+}
+.header{
+    height: 100vh;
+    background-image:var(--background),url('imagenes/imagenes4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    font-weight: 700;
+    
+    
+}
+.nav__items{
+    
+    display: inline-block;
+    background: #ffffff;
+    padding: 20px 25px;
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 40px;
+}
+.nav__items--ac{
+    border: 1px solid #ffffff;
+   text-align: center;
+}
+.header__texto{
+    margin-bottom: 10%;
+    width: 80%;
+}
+.header__titulo{
+    font-size:3.2rem;
+  
+}
+.header__contenedor{
+    display:flex;
+    height: calc(100vh - 70px);
+    align-items:center;
+    color: #ffffff;
+}
+.header__wave{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 100px;
+}
+.header__acs{
+    display: inline-block;
+    background: #ffffff;
+    padding: var(--boton-padding);
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 40px;
+    
+    
+}
+
+.presentacion{
+    text-align: center; 
+    padding-top: 0px;
+    min-height:400px;
+}
+.presentacion__imagen{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius:30%; 
+}
+.presentacion__copis{
+    width: 80%;
+    margin: 0 auto;
+}
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap:center;
+    justify-items:center;
+    align-items: center;
+}
+.about__imag{
+    text-align: center;
+}
+.about__imag--left{
+    text-align: left;
+}
+.about__picture{
+    max-width: 80%;
+}
+.about__texto{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 390;
+}
+
+
+
+.proyectos{
+    
+}
+.proyectos__grid{
+    display: grid;
+    height: 250px;
+    grid-template-areas:
+       "img1  im2 im2 img3 img3 "
+       "img1  img2 img2 img3 img3 " ;
+    gap:15px;
+    
+}
+.proyectos__cosas{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.proyectos__imagen{
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    cursor:pointer;
+}
+.proyectos__cosas:nth-last-of-type(1){
+    grid-area: img1;
+}
+.proyectos__cosas:nth-last-of-type(2){
+    grid-area: img2;
+}
+.proyectos__cosas:nth-last-of-type(3){
+    grid-area: img3;
+}

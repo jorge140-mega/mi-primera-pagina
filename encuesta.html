@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilodemiencu.css"/>
+        <script src="javascript/codigodmiencuesta.js"></script>
+    </head>
+    <body>
+        <div class="contenedor">
+            <form name="form1" action="gmail.com" enctype="text/plain" method="POST" class="form" >
+                 <div class="form-header">
+                     <h1 class="form-title">E<span>ncuesta</span></h1>
+                     <h2 class="form-title" id="biesa1"></h2>
+                  </div>
+            
+            <label for="nombre1" class="form-label">NOMBRE:</label>
+            <input type="text" value="" name="campo1" id="nombre1" placeholder="ingresa tu nombre" autofocus="" class="form-input">
+            
+            <label for="apellido12" class="form-label">DIRECCION:</label>
+            <input type="text" value="" name="campo2" id="apellido12" placeholder="ingrese su direccion" size="20" class="form-input">
+            
+            <label for="apellido13" class="form-label">CORREO ELECTRONICO:</label>
+            <input type="email" value="" name="campo3" id="apellido13" placeholder="ingrese su correo" size="20" class="form-input">
+
+            <label for="parrafo" class="form-label">MENSAJE:</label>
+            <textarea class="textaria" id="parrafo" placeholder="ingrese su mensaje"></textarea>
+           
+            <input type="button"  class="submit" onclick="mandar()" value="Enviar">
+           
+        </form>
+             <button class="submit1" onclick=""><a href="mi pagina web.html">regresar</a></button>
+        </div>
+    </body>
+</html>
